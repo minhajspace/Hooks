@@ -7,15 +7,21 @@ const UseEffectExample = () =>{
     // Similar to componentDidMount and componentDidUpdate:
     useEffect(() => {
         // Update the document title using the browser API
+        const interval = setInterval(tick,1000)
         document.title = ` you click ${count} times`;
+        return ()=>{
+            clearInterval(interval)
+        }
     });
+  const tick =()=>{
+        setCount(count + 1 )
+    }
 
     return (
         <div>
-            <p>You clicked {count} times</p>
-            <button onClick={() => setCount(count + 1)}>
-                Click me
-      </button>
+            <p> {count} </p>
+           
+     
         </div>
     );
 
