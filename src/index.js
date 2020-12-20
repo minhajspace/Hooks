@@ -20,10 +20,8 @@ ReactDOM.render(
     {/* <FetchData/> */}
     {/* <Indivisualdatafetch/> */}
     <ContextApi/>
-    <ComponentA/>
-    <ComponentB/>
-    <ComponentC />
-    <ComponentD />
+   
+   
 
    
 

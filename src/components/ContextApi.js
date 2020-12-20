@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { createContext } from 'react'
+import ComponentA from './ComponentA'
+
+export const FirstName = createContext();
+
 
 const ContextApi = () => {
+
     return (
-        <div style={{margin:"100px"}}>
-            <h1> this example of contextApi example </h1>
+        <div >
+            <FirstName.Provider value={'Minhaj ahmad khan'}>
+            <ComponentA/>
+            </FirstName.Provider>
         </div>
     )
 }

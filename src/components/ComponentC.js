@@ -1,9 +1,10 @@
 import React from 'react'
+import ComponentD from './ComponentD'
 
 const ComponentC = () => {
     return (
         <div style={{ margin: "100px" }}>
-            <h1>this is ComponentC page </h1>
+          <ComponentD/>
         </div>
     )
 }
