@@ -5,6 +5,7 @@ import Counter from './components/Counter';
 import UseEffectExample from './components/use-effect'
 import FetchData from './components/fetch-data'
 import Indivisualdatafetch from './components/Indivisualdatafetch';
+import Usecontext from './components/Usecontext';
 
 
 ReactDOM.render(
@@ -12,7 +13,9 @@ ReactDOM.render(
     {/* <Counter /> */}
     {/* <UseEffectExample/> */}
     {/* <FetchData/> */}
-    <Indivisualdatafetch/>
+    {/* <Indivisualdatafetch/> */}
+    <Usecontext/>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
