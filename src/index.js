@@ -2,10 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Counter from './components/Counter';
-import UseEffectExample from './components/use-effect'
-import FetchData from './components/fetch-data'
+import UseEffectExample from './components/use-effect';
+import FetchData from './components/fetch-data';
 import Indivisualdatafetch from './components/Indivisualdatafetch';
-import Usecontext from './components/Usecontext';
+import ContextApi from './components/ContextApi';
+import ComponentA from './components/ComponentA';
+import ComponentB from './components/ComponentB';
+import ComponentC from './components/ComponentC'
+import ComponentD from './components/ComponentD'
+
 
 
 ReactDOM.render(
@@ -14,7 +19,13 @@ ReactDOM.render(
     {/* <UseEffectExample/> */}
     {/* <FetchData/> */}
     {/* <Indivisualdatafetch/> */}
-    <Usecontext/>
+    <ContextApi/>
+    <ComponentA/>
+    <ComponentB/>
+    <ComponentC />
+    <ComponentD />
+
+   
 
   </React.StrictMode>,
   document.getElementById('root')
