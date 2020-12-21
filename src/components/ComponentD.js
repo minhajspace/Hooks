@@ -1,15 +1,15 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import FirstName from './ContextApi'
 
+
 const ComponentD = () => {
+
+const firstname = useContext(FirstName);
+console.log(firstname)
     return (
       
             <div style={{ margin: "100px" }}>
-             <FirstName.Consumer>
-                {(value)=>{
-                    return <div>{value}</div>
-                }}
-             </FirstName.Consumer>
+             {firstname}
              
             </div>
        
