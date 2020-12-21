@@ -1,13 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React,{useContext} from 'react'
+import FirstName from './ContextApi'
 
-const ComponentD = props => {
+
+const ComponentD = () => {
+
+const firstname = useContext(FirstName);
+console.log(firstname)
     return (
-        <div>
-            <h1> Output is coming from ComponentD  {props.name}</h1>
-        </div>
+      
+            <div style={{ margin: "100px" }}>
+             {firstname}
+             
+            </div>
+       
     )
 }
-
 
 export default ComponentD
