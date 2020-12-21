@@ -11,6 +11,7 @@ import ComponentB from './components/ComponentB';
 import ComponentC from './components/ComponentC'
 import ComponentD from './components/ComponentD'
 import CounterReducer from './components/Reducer/Counter-Reducer'
+import CounterTwo from './components/Reducer/CounterTwo'
 
 
 
@@ -21,7 +22,8 @@ ReactDOM.render(
     {/* <FetchData/> */}
     {/* <Indivisualdatafetch/> */}
     {/* <ContextApi/> */}
-    <CounterReducer/>
+    {/* <CounterReducer/> */}
+    <CounterTwo/>
    
    
 
