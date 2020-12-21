@@ -6,8 +6,8 @@ import DataFetchingUsinguseReducer from './Data-Fetching-Using-useReducer';
 const App = () => {
     return (
         <div>
-            <DataFetchingUsinguseState/>
-            {/* <DataFetchingUsinguseReducer/> */}
+            {/* <DataFetchingUsinguseState/> */}
+            <DataFetchingUsinguseReducer/>
 
 
         </div>
