@@ -1,43 +1,36 @@
 import React, { useReducer } from 'react'
-const initalState = {
-    firstCounter: 0,
-    Name: "Minhaj ahmad khan"
-};
+const initialState = 0;
 const reducer = (state, action) => {
-    console.log(state)
-    switch (action.type) {
+    switch (action) {
         case 'increment':
-            return { firstCounter: state.firstCounter + action.value };
+            return state + 1;
         case 'decrement':
-            return { firstCounter: state.firstCounter - action.value };
+            return state - 1;
         case 'reset':
-            return initalState;
+            return state = 0;
         default:
-            return state;
+            return state
     }
 
 }
 
 const CounterThree = () => {
-    const [count, dispatch] = useReducer(reducer, initalState)
-    const [count2,dispatch2] =useReducer(reducer,initalState)
-    console.log(count)
 
+    const [count, dispatch] = useReducer(reducer, initialState)
+    const [count2,dispatch2] =useReducer(reducer,initialState)
     return (
-        <div>
-            <h1>{count.firstCounter}</h1>
-            <button onClick={() => { dispatch({ type: 'increment', value: 1 }) }}>increment</button>
-            <button onClick={() => { dispatch({ type: 'decrement', value: 1 }) }}>decrement</button>
-            <hr/>
-           
-            <button onClick={() => { dispatch({ type: 'reset' }) }}>reset</button>
-            <hr/>
-            <h1>{count2.firstCounter}</h1>
-            <button onClick={() => { dispatch2({ type: 'increment', value: 5 }) }}>increment by 5 </button>
-            <button onClick={() => { dispatch2({ type: 'decrement', value: 5 }) }}>decrement by 5 </button>
+        <div style={{ marginRight: 'auto', marginLeft: 'auto', marginTop: 'auto', marginBottom: 'auto', }}>
+            <h1>{count}</h1>
+            <h1>{count2}</h1>
+            <button onClick={() => dispatch('increment')}>Increment</button>
+            <button onClick={() => dispatch('decrement')}>Decrement</button>
+            <button onClick={() => dispatch2('increment')}>Increment</button>
+            <button onClick={() => dispatch2('decrement')}>Decrement</button>
+
+            <button onClick={() => dispatch('reset')}>Reset</button>
 
         </div>
     )
 }
 
-export default CounterThree
+export default CounterThree;
