@@ -14,7 +14,8 @@ import CounterReducer from './components/Reducer/Counter-Reducer'
 import CounterTwo from './components/Reducer/CounterTwo'
 import TwoCounterUsingSameState from './components/Reducer/Two-Counter-Using-Same-State'
 import CounterThree from './components/Reducer/CounterThree'
-import App from './components/Reducer/useReduceruseContext/app'
+// import App from './components/Reducer/useReduceruseContext/app'
+import App from './components/DataFetching/App'
 
 
 
