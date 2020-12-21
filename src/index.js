@@ -12,6 +12,7 @@ import ComponentC from './components/ComponentC'
 import ComponentD from './components/ComponentD'
 import CounterReducer from './components/Reducer/Counter-Reducer'
 import CounterTwo from './components/Reducer/CounterTwo'
+import TwoCounterUsingSameState from './components/Reducer/Two-Counter-Using-Same-State'
 
 
 
@@ -23,7 +24,9 @@ ReactDOM.render(
     {/* <Indivisualdatafetch/> */}
     {/* <ContextApi/> */}
     {/* <CounterReducer/> */}
-    <CounterTwo/>
+    {/* <CounterTwo/> */}
+    <TwoCounterUsingSameState/>
+    
    
    
 
