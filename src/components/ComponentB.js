@@ -1,11 +1,13 @@
 import React from 'react'
 import ComponentC from './ComponentC'
 
-const ComponentB = (props) => {
+const ComponentB = () => {
     return (
-        <div>
-            <ComponentC name={props.name}/>
-        </div>
+       
+            <div style={{ margin: "100px" }}>
+              <ComponentC/>
+            </div>
+       
     )
 }
 

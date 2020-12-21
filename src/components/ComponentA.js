@@ -1,13 +1,12 @@
 import React from 'react'
-import ComponentB from './ComponentB';
+import ComponentB from './ComponentB'
 
-
-const ComponentA = (props) => {
+const ComponentA = () => {
     return (
-        <div>
-            <ComponentB name={props.name}/>
+        <div style={{margin:"100px"}}>
+            <ComponentB/>
         </div>
     )
 }
- 
+
 export default ComponentA
