@@ -14,7 +14,8 @@ const App = () => {
     }
     return (
         <div>
-            <button></button>
+            <button onClick={handleIncrement}>Increment {count}</button>
+            <button onClick={handleDecrement}>Decrement {count}</button>
         </div>
     )
 }
