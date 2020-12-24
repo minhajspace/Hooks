@@ -16,7 +16,8 @@ import TwoCounterUsingSameState from './components/Reducer/Two-Counter-Using-Sam
 import CounterThree from './components/Reducer/CounterThree'
 // import App from './components/Reducer/useReduceruseContext/app'
 // import App from './components/DataFetching/App'
-import App from './components/Use-Callback/App'
+// import App from './components/Use-Callback/App'
+   import App from './components/Use-memo/App'
 
 
 
