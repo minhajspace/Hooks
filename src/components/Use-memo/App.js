@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useMemo} from 'react'
 
 
 const App = () => {
@@ -11,14 +11,17 @@ const App = () => {
     const handleDecrement = () => {
         setCount2(count2 - 1)
     }
-
-    const isEven = () =>{
-      return count % 2 === 0  
-    }
+   
+   const isEven =  useMemo = (() => {
+            let i = 0;
+            while (i < 20000000000) i++
+            return count % 2 === 0 
+    },[count])
+    
     return (
         <div>
             <button onClick={handleIncrement}>Increment {count}</button>
-            <span>{isEven() ? 'even':'odd'}</span>
+            <span>{isEven ? 'even':'odd'}</span>
             <br/>
             <button onClick={handleDecrement}>Decrement {count2}</button>
         </div>
